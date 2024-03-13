@@ -18,7 +18,7 @@ app.listen(8080, async () => {
     mongoose.connection.on('connected', () => console.log('connected to database'));
 
     await mongoose.connect(
-      'mongodb+srv://arif-admin:mamad123@cluster0.dpo4bu9.mongodb.net/ptxyz?retryWrites=true&w=majority'
+      'mongodb+srv://*:*@cluster0.dpo4bu9.mongodb.net/ptxyz?retryWrites=true&w=majority'
     );
   } catch (error) {
     console.log(error);
